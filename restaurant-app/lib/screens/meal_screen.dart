@@ -46,7 +46,10 @@ class MealScreen extends StatelessWidget {
     }
 
     return Scaffold(
-      appBar: AppBar(backgroundColor: Colors.teal, title: Text(categoryName)),
+      appBar: AppBar(
+        backgroundColor: Colors.deepOrangeAccent,
+        title: Text(categoryName),
+      ),
       body: bodyWidget,
     );
   }

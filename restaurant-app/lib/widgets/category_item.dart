@@ -21,8 +21,8 @@ class CategoryItem extends StatelessWidget {
           context,
           MaterialPageRoute(
             builder: (_) {
-             return MealScreen(categoryId: id);
-          },
+              return MealScreen(categoryId: id, categoryName: name);
+            },
           ),
         );
       },
@@ -33,10 +33,7 @@ class CategoryItem extends StatelessWidget {
           height: 200,
           width: double.infinity,
           decoration: BoxDecoration(
-            image: DecorationImage(
-              fit: BoxFit.cover,
-              image: AssetImage(image),
-            ),
+            image: DecorationImage(fit: BoxFit.cover, image: AssetImage(image)),
           ),
 
           alignment: Alignment.bottomCenter,

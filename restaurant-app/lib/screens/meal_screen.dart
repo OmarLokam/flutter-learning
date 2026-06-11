@@ -5,7 +5,12 @@ import 'package:task/widgets/meal_item.dart';
 
 class MealScreen extends StatelessWidget {
   final String categoryId;
-  const MealScreen({super.key, required this.categoryId});
+  final String categoryName;
+  const MealScreen({
+    super.key,
+    required this.categoryId,
+    required this.categoryName,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +46,7 @@ class MealScreen extends StatelessWidget {
     }
 
     return Scaffold(
-      appBar: AppBar(backgroundColor: Colors.teal, title: const Text('Meals')),
+      appBar: AppBar(backgroundColor: Colors.teal, title: Text(categoryName)),
       body: bodyWidget,
     );
   }

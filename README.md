@@ -1,22 +1,12 @@
-# Flutter Learning Journey 🚀
+# 🚀 Flutter Learning Journey & Portfolio
 
-A dedicated repository tracking my progress, tasks, and applications built during my Flutter & Dart mobile development learning journey.
+Welcome to my Flutter development repository! 
 
----
+⚠️ **Important Note:** All the completed projects, dynamic source code, and full portfolio documentation are maintained and fully structured inside the **`projects`** branch.
 
-## 📱 Tasks & Projects
-
-### 1. Meals App
-* **Description:** A dynamically structured UI application designed to display various meal categories and detailed recipes efficiently.
-* **Key Features Implemented:**
-  * **Clean Directory Architecture:** Organized layout with strict separation of concerns into dedicated layers (`models`, `screens`, `widgets`).
-  * **Reusable Components:** Implemented custom widgets (like `CategoryItem`) to reduce redundancy and ensure modular, maintainable code.
-  * **Custom UI & Theming:** Enhanced layouts using specific alignments, custom cards, and strict theme styling (e.g., `Colors.deepOrangeAccent` for structural background branding).
-  * **Model-Driven UI:** Utilizing structured models (`CategoryModel`) to dynamically map and handle data properties including remote network images.
+### 📁 How to view the projects:
+1. Switch the branch from `main` to **`projects`** using the GitHub branch dropdown menu above.
+2. Or simply click here to go directly: **[View Projects Branch](https://github.com/OmarLokam/flutter-learning/tree/projects)**
 
 ---
-
-## 🛠️ Tech Stack & Tools
-* **Framework:** Flutter
-* **Language:** Dart
-* **IDE:** Visual Studio Code
+*Maintained by [Omar Lokam](https://github.com/OmarLokam) 👨‍💻*

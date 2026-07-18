@@ -2,7 +2,7 @@ import 'model/meal.dart';
 
 import 'model/category.dart';
 
-const categorys = [
+const List<Category> categorys = [
   Category(id: "c1", name: "Chinese", image: "images/chinese.jpg"),
   Category(id: "c2", name: "Indian", image: "images/indian.jpg"),
   Category(id: "c3", name: "Oriental Meals", image: "images/oriental.jpg"),

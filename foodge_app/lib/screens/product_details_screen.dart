@@ -41,7 +41,7 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
               Center(
                 child: Hero(
                   tag: foodItem.id.toString(),
-                  child: Image.network(
+                  child: Image.asset(
                     foodItem.imagePath,
                     height: 220,
                     fit: BoxFit.contain,

@@ -1,1 +1,5 @@
-Set-Content -Path .gitignore -Value "**/build/`n**/.dart_tool/`n.lock`n.ios/`n.android/"
+**/build/
+**/.dart_tool/
+*.lock
+.ios/
+.android/

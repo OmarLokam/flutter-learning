@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/food_item.dart';
+import '../../../../core/models/food_item.dart';
 import '../widgets/food_card.dart';
 
 class HomeScreen extends StatefulWidget {

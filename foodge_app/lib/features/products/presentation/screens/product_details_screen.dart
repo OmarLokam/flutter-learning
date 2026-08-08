@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:foodge_app/features/home/data/food_item.dart';
 import 'package:foodge_app/features/products/presentation/widgets/checkout_bottom_bar.dart';
 import 'package:foodge_app/features/products/presentation/widgets/product_customization.dart';
 import 'package:foodge_app/features/products/presentation/widgets/product_description.dart';
 import 'package:foodge_app/features/products/presentation/widgets/product_header_info.dart';
 import 'package:foodge_app/features/products/presentation/widgets/product_image.dart';
-
+import '../../../home/data/food_item.dart';
 
 class ProductDetailsScreen extends StatefulWidget {
   const ProductDetailsScreen({super.key});
@@ -67,7 +66,6 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
               CheckoutBottomBar(
                 totalPrice: foodItem.price * portionCount,
                 onOrderPressed: () {
-                  // تنفيذ الطلب
                 },
               ),
               const SizedBox(height: 24),

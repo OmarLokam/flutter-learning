@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.deepOrangeAccent,
+        backgroundColor:const Color(0xFFFBF9F6),
         title: const Text('Meal App'),
         centerTitle: true,
       ),

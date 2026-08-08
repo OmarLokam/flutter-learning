@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../../core/models/food_item.dart';
+import '../../../home/data/food_item.dart';
 
 class ProductHeaderInfo extends StatelessWidget {
   final FoodItem foodItem;

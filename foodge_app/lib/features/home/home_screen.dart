@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:foodge_app/features/home/data/food_item.dart';
-import 'package:foodge_app/features/home/presentation/widgets/food_card.dart';
-
+import 'data/food_item.dart';
+import 'food_card.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

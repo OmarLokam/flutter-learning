@@ -24,7 +24,7 @@ class CheckoutBottomBar extends StatelessWidget {
           child: Text(
             '\$${totalPrice.toStringAsFixed(2)}',
             style: const TextStyle(
-              fontSize: 20,
+              fontSize: 15,
               fontWeight: FontWeight.bold,
               color: Colors.white,
             ),
@@ -40,9 +40,9 @@ class CheckoutBottomBar extends StatelessWidget {
           ),
           onPressed: onOrderPressed,
           child: const Text(
-            'ORDER NOW',
+            'Order Now',
             style: TextStyle(
-              fontSize: 16,
+              fontSize: 14,
               fontWeight: FontWeight.bold,
               color: Colors.white,
             ),

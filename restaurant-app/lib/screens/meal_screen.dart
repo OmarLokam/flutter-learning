@@ -38,7 +38,7 @@ class MealScreen extends StatelessWidget {
           return MealItem(
             title: filteredMeals[index].title,
             imageUrl: filteredMeals[index].imageUrl,
-            salary: filteredMeals[index].salary,
+            price: filteredMeals[index].salary,
             time: filteredMeals[index].time,
           );
         },
@@ -47,7 +47,7 @@ class MealScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.deepOrangeAccent,
+        backgroundColor: const Color(0xFFD4A373),
         title: Text(categoryName),
       ),
       body: bodyWidget,

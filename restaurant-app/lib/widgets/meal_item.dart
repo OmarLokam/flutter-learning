@@ -3,35 +3,42 @@ import 'package:flutter/material.dart';
 class MealItem extends StatelessWidget {
   final String title;
   final String imageUrl;
-  final String salary;
+  final String price; 
   final String time;
 
   const MealItem({
     super.key,
     required this.title,
     required this.imageUrl,
-    required this.salary,
+    required this.price,
     required this.time,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.all(10),
+      margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(15),
-        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 5)],
+        borderRadius: BorderRadius.circular(16),
+        boxShadow: const [
+          BoxShadow(
+            color: Colors.black12,
+            blurRadius: 8,
+            offset: Offset(0, 3), 
+          ),
+        ],
       ),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           ClipRRect(
-            borderRadius: const BorderRadius.vertical(top: Radius.circular(15)),
+            borderRadius: const BorderRadius.vertical(top: Radius.circular(16)),
             child: Image.asset(
               imageUrl,
-              height: 200,
               width: double.infinity,
-              fit: BoxFit.cover,
+              fit: BoxFit
+                  .fitWidth, 
             ),
           ),
           Padding(
@@ -44,6 +51,7 @@ class MealItem extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
+                    color: Color(0xFF2F2F2F),
                   ),
                 ),
                 const SizedBox(height: 8),
@@ -51,10 +59,10 @@ class MealItem extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      '$salary LE',
+                      '$price LE',
                       style: const TextStyle(
                         fontSize: 16,
-                        color: Colors.teal,
+                        color: Color(0xFFD4A373),
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -62,11 +70,17 @@ class MealItem extends StatelessWidget {
                       children: [
                         const Icon(
                           Icons.access_time,
-                          size: 20,
+                          size: 18,
                           color: Colors.grey,
                         ),
                         const SizedBox(width: 5),
-                        Text('$time min'),
+                        Text(
+                          '$time min',
+                          style: const TextStyle(
+                            color: Colors.grey,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
                       ],
                     ),
                   ],
